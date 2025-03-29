@@ -18,24 +18,29 @@ body {
 header {
     background: #333;
     color: white;
-    padding: 20px;
+    padding: 15px;
+    margin: 3px;
     text-align: center;
 }
 
 /* Estilo da logo */
-.header-logo {
-    width: 100vw;
-    display: flex;
+.logo-container {
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border: 5px;
     margin-bottom: 10px;
 }
 
-.header-logo img {
-    width: 100px !important;
-    height: auto !important;
-    max-height: 200px;
-    object-fit: cover;
+header img.imgsz {
+    width: 100% !important;
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 45px;
+    display: block;
+   
+
 }
 
 /* Estilo da navegação */
@@ -52,14 +57,15 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
-    transition: background 0.3s;
+    transition: background 0.9s;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
@@ -82,6 +88,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 20px;
+    margin: 3px;
 }
 
 .footer-container {
@@ -90,6 +97,7 @@ footer {
     flex-wrap: wrap;
     padding: 20px;
 }
+
 
 /* Seções do Footer */
 .footer-section {
@@ -107,9 +115,23 @@ footer {
     list-style: none;
     padding: 0;
 }
+.footer-section ul li {
+    list-style: none;
+    margin: 3px;
+}
 
-.footer-section ul a {
+.footer-section ul li a {
+    color: #ffffff;
     text-decoration: none;
+    margin: 8px, 12px;
+    transition: background 0.3s;
+    border-radius: 10px;
+    
+}
+
+.footer-section ul li a:hover {
+    background-color: #555;
+    border-radius: 10px;
 }
 
 /* Estilo dos Articles */
