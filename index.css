@@ -157,20 +157,3 @@ article section {
         width: 100%;
     }
 }
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main, .header, .nav, .main, .footer, .article {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .main, .header, .nav, .main, .footer, .article  {
-    width: 100%;
-  }
-}
