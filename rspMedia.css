@@ -11,7 +11,7 @@ h1, p {
   margin: 8px 0;
 }
 
-/* Para telas pequenas (até 600px) */
+/* Telas pequenas (até 600px) */
 @media (max-width: 600px) {
   .container {
     padding: 8px;
@@ -22,14 +22,14 @@ h1, p {
   }
 }
 
-/* Para telas de 600px a 767px */
+/* Telas de 600px a 767px */
 @media (min-width: 600px) and (max-width: 767px) {
   h1, p {
     font-size: 1.1rem;
   }
 }
 
-/* Para telas maiores, ajuste conforme necessário */
+/* Telas maiores */
 @media (min-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -38,3 +38,22 @@ h1, p {
     font-size: 1.2rem;
   }
 }
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
