@@ -153,18 +153,31 @@
 
     <footer>
         <p>&copy; Familia Riêgo Ribeiro</p>
-        <p id="demo"></p>
-        <script>
-            // Função para exibir a data atual
-            function showDate() {
-                const today = new Date();
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                document.getElementById("demo").innerHTML = "Data de hoje: " + today.toLocaleDateString('pt-BR', options);
-            }
+        <p>Data e hora atuais: </p>
+    <p id="datetime"></p>
 
-            // Chama a função para exibir a data
-            showDate();
-        </script>
+    <script>
+        // Define a arrow function que atualiza a data e a hora
+        const showDateTime = () => {
+            const now = new Date();
+            
+            // Opções para formatar a data e a hora para o padrão brasileiro
+            const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+            const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            
+            const formattedDate = now.toLocaleDateString('pt-BR', dateOptions);
+            const formattedTime = now.toLocaleTimeString('pt-BR', timeOptions);
+            
+            // Atualiza o elemento HTML com a data e a hora combinadas
+            document.getElementById("datetime").innerHTML = `📅 ${formattedDate} <br> ⏰ ${formattedTime}`;
+        };
+
+        // Chama a função uma vez imediatamente para não haver atraso na exibição
+        showDateTime();
+
+        // Configura um intervalo para chamar a função a cada 1000ms (1 segundo)
+        setInterval(showDateTime, 1000);
+    </script>
     </footer>
 
 </body>
