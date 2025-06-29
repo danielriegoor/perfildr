@@ -111,6 +111,54 @@
             margin-top: 50px; /* Espaçamento acima do rodapé */
         }
 
+/* Responsividade */        
+/* Telas pequenas (até 600px) */
+@media (max-width: 600px) {
+  .container {
+    padding: 8px;
+  }
+  h1, p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
+
+/* Telas de 600px a 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  h1, p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Telas maiores */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+
     </style>
 </head>
 <body>
